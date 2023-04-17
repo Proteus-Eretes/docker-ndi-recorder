@@ -1,6 +1,7 @@
 # NDI recorder Dockerfile
-Record NDI streams within a Docker container. Currently supports 1 stream per container.
-Downloads SDK and recorder directly from ndi.tv
+Record NDI streams within a Docker container. Currently supports 1 stream per
+container. Downloads SDK and recorder directly from [ndi.tv](ndi.tv). See an
+excerpt of the relevant documentation in [SDK_DOCUMENTATION.md](./SDK_DOCUMENTATION.md)
 
 Needs Linux host.
 
