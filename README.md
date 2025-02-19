@@ -1,15 +1,15 @@
 # NDI recorder Dockerfile
 Record NDI streams within a Docker container. Currently supports 1 stream per
-container. Downloads SDK and recorder directly from [ndi.tv](ndi.tv). See an
+container. Downloads SDK and recorder directly from [ndi.video](https://ndi.video). See an
 excerpt of the relevant documentation in [SDK_DOCUMENTATION.md](./SDK_DOCUMENTATION.md)
-or online at https://docs.ndi.video/docs/sdk/16.-command-line-tools
+or the [online docs](https://docs.ndi.video/all/developing-with-ndi/sdk/command-line-tools).
 
-**Needs Linux host** for mDNS sharing with avahi and dbus. Install avahi-daemon
-and avahi-utils on the host as well.
+This docker image **needs a Linux host** for mDNS sharing with avahi and dbus. Install
+avahi-daemon and avahi-utils on the host as well.
 
 Run locally: 
 ```shell
-# Install host dependencies
+# Install host dependencies, assumes you have docker installed
 apt install avahi-daemon avahi-utils
 
 # Build container
