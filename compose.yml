@@ -1,0 +1,13 @@
+services:
+  recorder:
+    build: .
+    environment:
+      STREAM_NAME: FRENSEL-THINKPAD-P14S-GEN-2A (PTZ-01 line overlay)
+      OUTPUT_FOLDER: /storage
+    volumes:
+      - type: bind
+        source: .
+        target: /storage
+      - /var/run/dbus:/var/run/dbus
+      - /var/run/avahi-daemon/socket:/var/run/avahi-daemon/socket
+    privileged: true
